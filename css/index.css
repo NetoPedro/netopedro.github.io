@@ -17,6 +17,169 @@
 .text-italic {
   font-style: italic;
 }
+.news-wrap, .experience-wrap, .publications-wrap, #activity-wrap, .cv-wrap, .contact-wrap, .skills-wrap {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.paper-links, .item-links {
+    margin-bottom: 2px;
+}
+
+#publications-main .paper {
+    margin: 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#publications-main .paper-title {
+    display: block;
+    font-weight: bold;
+    transition: 500ms;
+}
+
+#publications-main .paper-venue {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#publications-main .paper-author,
+#publications-main .paper-year {
+    display: block;
+    font-size: 0.8em;
+}
+
+
+#publications-full{
+    max-height: 3000px;
+    overflow: hidden;
+    transition: max-height 2s;
+}
+
+#publications .fas,
+.activity-item .fas {
+    display: block;
+    position: relative;
+    left: -20px;
+    width: 0;
+    height: 0;
+    font-size: 1.4em;
+    color: hsl(206, 66%, 55%);
+}
+
+
+#publications-full .paper-venue {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #888888;
+}
+
+#publications-full .paper-author,
+#publications-full .paper-year,
+.activity-item .item-desc {
+    display: inline-block;
+    color: #888888;
+    font-size: 0.8em;
+}
+
+#publications-full .paper:hover .paper-title{
+    color: hsl(206, 66%, 55%);
+}
+
+#publications-full .paper + .paper {
+    margin-top: 10px;
+}
+
+#publications-stats {
+    margin-top: 25px;
+}
+
+.publication-stats-wrap {
+    width: 100%;
+    text-align: center;
+}
+
+.publication-stats-circle {
+    display: inline-block;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 4.5em;
+    border-style: solid;
+    border-color: hsl(206, 46%, 75%);
+    border-width: 1px;
+    margin: 0 0.5em;
+    background-color: #ffffff;
+    transition: 500ms;
+    color: hsl(206, 66%, 55%);
+}
+
+.publication-stats-circle:hover {
+    background-color: hsl(206, 66%, 55%);
+    border-color: hsl(206, 66%, 55%);
+    color: #ffffff;
+}
+
+.publication-stats-circle-number {
+    display: block;
+    padding-top: 0.4em;
+    font-size: 1.8em;
+}
+
+.publication-stats-circle-title {
+    display: block;
+    font-size: 0.6em;
+    line-height: 20%;
+}
+
+
+
+#publications-full > .publications-subtitle {
+    margin-top: 30px;
+}
+
+#publications-full .paper,
+#activity .activity-item {
+    margin: 0 0 0 25px;
+    text-align: left;
+}
+
+#publications-full .paper-title {
+    display: inline-block;
+    transition: 500ms;
+}
+
+#publications-main .paper:hover .paper-title{
+    color: hsl(206, 66%, 55%);
+}
+
+#publications-main .paper + .paper,
+#activity .activity-item + .activity-item {
+    margin-top: 15px;
+}
+
+.news-title, .experience-title, .publications-title, .skills-title, #activity-title {
+    display: block;
+    padding: 0px 0px 10px 0px;
+    font-size: 2em;
+    color: hsl(206, 66%, 55%);
+    text-align: center;
+}
+.publications-subtitle, .skills-subtitle {
+    display: block;
+    width: 100%;
+    color: hsl(206, 46%, 75%);
+    text-align: center;
+    font-size: 1.1em;
+    margin: 15px 0 10px 0;
+    text-transform: uppercase;
+}
+#experience, #publications {
+    background: #ffffff;
+    width: 100%;
+}
 
 /* Making the "text-muted" class smaller, seems a bit too large. */
 .text-muted {
