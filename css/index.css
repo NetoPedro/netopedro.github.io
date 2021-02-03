@@ -9,7 +9,7 @@
 
     This file contains CSS classes / IDs used to override the Creative Bootstrap Theme
 */
-
+/* From Here to the next comment, adapted from https://github.com/jtrpinto/jtrpinto.github.io*/
 .activity-arrows .fas {
     color: hsl(206, 0%, 50%);
     transition: color 500ms;
@@ -328,7 +328,7 @@
     background: #ffffff;
     width: 100%;
 }
-
+/* End of adapted code from https://github.com/jtrpinto/jtrpinto.github.io*/
 /* Making the "text-muted" class smaller, seems a bit too large. */
 .text-muted {
   font-size: 97%;
