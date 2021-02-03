@@ -153,13 +153,13 @@
 }
 
 .gray-button {
-    border-color: hsl(206, 46%, 75%);
-    color: hsl(206, 46%, 75%);
+    border-color: #E61231;
+    color: #E61231;
 }
 
 .gray-button:hover {
-    border-color: hsl(206, 66%, 55%);
-    background: hsl(206, 66%, 55%);
+    border-color: #E61231;
+    background: #E61231;
     color: #ffffff;
 }
 
