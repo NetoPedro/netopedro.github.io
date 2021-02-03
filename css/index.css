@@ -45,6 +45,7 @@
 #contact .description {
     font-weight: bold;
     font-size: 1.1em;
+    padding: 75px 0;
 }
 
 #contact .links {
@@ -75,7 +76,7 @@
     font-size: 0.9em;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1500px) {
     #contact .aep-small {
         display: block;
     }
