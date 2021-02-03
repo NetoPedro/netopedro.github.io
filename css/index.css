@@ -48,7 +48,10 @@
     background: #212529;
     width: 100%;
 }
-
+#pubs {
+    background: #ffffff;
+    width: 100%;
+}
 .contact-wrap {
     display: flex;
     color: #dddddd;
