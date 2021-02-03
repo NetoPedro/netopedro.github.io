@@ -45,7 +45,7 @@
 }
 
 #contact {
-    background: #E61231;
+    background: #f05f40;
     width: 100%;
 }
 #pubs {
@@ -153,13 +153,13 @@
 }
 
 .gray-button {
-    border-color: #E61231;
-    color: #E61231;
+    border-color: #f05f40;
+    color: #f05f40;
 }
 
 .gray-button:hover {
-    border-color: #E61231;
-    background: #E61231;
+    border-color: #f05f40;
+    background: #f05f40;
     color: #ffffff;
 }
 
@@ -216,7 +216,7 @@
     width: 0;
     height: 0;
     font-size: 1.4em;
-    color: #E61231;
+    color: #f05f40;
 }
 
 
@@ -235,7 +235,7 @@
 }
 
 #publications-full .paper:hover .paper-title{
-    color: #E61231;
+    color: #f05f40;
 }
 
 #publications-full .paper + .paper {
@@ -256,17 +256,17 @@
     width: 4.5em;
     height: 4.5em;
     border-style: solid;
-    border-color: #E61231;
+    border-color: #f05f40;
     border-width: 1px;
     margin: 0 0.5em;
     background-color: #ffffff;
     transition: 500ms;
-    color: #E61231;
+    color: #f05f40;
 }
 
 .publication-stats-circle:hover {
-    background-color: #E61231;
-    border-color: #E61231;
+    background-color: #f05f40;
+    border-color: #f05f40;
     color: #ffffff;
 }
 
@@ -300,7 +300,7 @@
 }
 
 #publications-main .paper:hover .paper-title{
-    color: #E61231;
+    color: #f05f40;
 }
 
 #publications-main .paper + .paper,
@@ -312,13 +312,13 @@
     display: block;
     padding: 0px 0px 10px 0px;
     font-size: 2em;
-    color: #E61231;
+    color: #f05f40;
     text-align: center;
 }
 .publications-subtitle, .skills-subtitle {
     display: block;
     width: 100%;
-    color: #E61231;
+    color: #f05f40;
     text-align: center;
     font-size: 1.1em;
     margin: 15px 0 10px 0;
