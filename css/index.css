@@ -169,7 +169,7 @@
   font-style: italic;
 }
 .news-wrap, .experience-wrap, .publications-wrap, #activity-wrap, .cv-wrap, .contact-wrap, .skills-wrap {
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     padding: 50px 0px;
