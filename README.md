@@ -39,3 +39,7 @@ do not follow the usual GITHUB-USERNAME-HERE.github.io/REPOSITORY-NAME-HERE form
 Instead they follow a "downing.io/REPOSITORY-NAME-HERE" format. 
 If the domain fails for some reason, you can still access my site by going to 
 [https://jasond94.github.io](https://jasond94.github.io)
+
+
+Contact and Publication sections were adapted from https://github.com/jtrpinto/jtrpinto.github.io
+
