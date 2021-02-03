@@ -76,7 +76,7 @@
     font-size: 0.9em;
 }
 
-@media(max-width: 1500px) {
+@media(max-width: 2500px) {
     #contact .aep-small {
         display: block;
     }
