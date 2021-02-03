@@ -427,82 +427,37 @@
             </div>
 
 
-  <!-- Contact section -->
-  <section class="min-padding" id="contact">
-    <div class="container">
-    
-      <!-- Contact Jason Row -->
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading">
-          
-          <!-- Attempting to avoid spam by removing @ and the dot in my domain -->
-            Contact Pedro</h2>
-          <hr class="primary">
-          <p>If you have an interesting opportunity in the <strong>Porto area</strong>, you
-            can send him a message using the form below.</p>
-          
-          <!-- Really avoiding spam by sending emails to the spam box
-               Docs URL: https://formspree.io/ 
-               Also, Bootstrap forms: https://getbootstrap.com/docs/3.3/css/#forms -->
-	        <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-							!!!!!!!     CHANGE THE FORMSPREE ENDPOINT TO YOUR OWN EMAIL IF YOU FORK THIS REPO. MUCH THANKS     !!!!!!!          
-							!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-					-->
-          <form action="https://formspree.io/f/meqpdgjy" method="POST" class="form-horizontal" role="form">
-            <!-- Need a name, reply to email, and a message -->
-            <div class="form-group">
-              <input type="text" name="name" placeholder="Your Name" class="form-control" required>
+  <div id="contact">
+        <div class="contact-wrap">
+            <div class="contact-right">
+                <span class="description">
+                    Research Assistant<br>
+                    PhD Student Machine Learning
+                </span>
+                <span class="links">
+                    <a title="Email" href="mailto:pedro.d.carneiro@inesctec.pt"><i class="fas fa-envelope"></i></a>
+                    <a title="LinkedIn" href="https://www.linkedin.com/in/pedro-neto-a94862106/"><i class="fab fa-linkedin"></i></a>
+                    <a title="Google Scholar" href="https://scholar.google.com/citations?user=xR33Ko0AAAAJ&hl=en"><i class="fab fa-google"></i></a>
+                    <a title="ResearchGate" href="https://www.researchgate.net/profile/Pedro_Neto21"><i class="fab fa-researchgate"></i></a>
+                    <a title="Github" href="https://github.com/NetoPedro"><i class="fab fa-github"></i></a>
+                </span>
+                <div class="aep-standard">
+                    <span class="address">INESC TEC, Campus da FEUP, Rua Dr. Roberto Frias 4200-465 Porto, Portugal <i
+                            class="fas fa-university"></i></span>
+                    <span class="email">pedro.carneiro.neto.21[at]gmail.com / pedro.d.carneiro[at]inesctec.pt <i
+                            class="fas fa-envelope"></i></span>
+                </div>
+                <div class="aep-small">
+                    <span class="address"><i class="fas fa-university"></i> INESC TEC, Campus da FEUP, Rua Dr. Roberto
+                        Frias 4200-465 Porto, Portugal</span>
+                    <span class="email"><i class="fas fa-envelope"></i> pedro.carneiro.neto.21[at]gmail.com /
+                        pedro.d.carneiro[at]inesctec.pt</span>
+                </div>
+                <a href="https://vcmi.inesctec.pt" target="_blank"><img class="vcmi-inesc" src="img/vcmi_inesc.png"></a>
+                </span>
             </div>
-            <div class="form-group">
-              <input type="email" name="email" placeholder="Your Email" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <textarea name="message" placeholder="Your message" class="form-control" required></textarea>
-            </div>
-            <!-- Hidden elements here -->
-            <input type="hidden" name="_subject" value="New email from Contact Me Form!" class="form-control">
-            <input type="hidden" name="_next" value="thanks.html" />
-            <!-- Submit button -->
-            <div class="form-group">
-              <input type="submit" value="Email Pedro" class="btn btn-primary btn-xl">
-            </div>
-          </form>
         </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <p>You can also find his personal email, LinkedIn and GitHub below too.</p>
-        </div>
-      </div>
-      
-      <!-- Email, LinkedIn, and GitHub links -->
-      <div class="row">
-      
-        <div class="col-4 col-sm-4 col-lg-2 offset-lg-3 text-center">
-          <a href="mailto:pedro.carneiro.neto.21[AT]gmail[DOT]com">
-            <i class="fa fa-envelope fa-4x sr-icons"></i>
-          </a>
-          <p><a href="mailto:pedro.carneiro.neto.21[AT]gmail[DOT]com" class="text-blue">Email</a></p>
-        </div>
-        
-        <div class="col-4 col-sm-4 col-lg-2 text-center">
-          <a href="https://www.linkedin.com/in/pedro-neto-a94862106/">
-            <i class="fa fa-linkedin-square fa-4x sr-icons"></i>
-          </a>
-          <p><a href="https://www.linkedin.com/in/pedro-neto-a94862106/" class="text-blue">LinkedIn</a></p>
-        </div>
-        
-        <div class="col-4 col-sm-4 col-lg-2 text-center">
-          <a href="https://github.com/NetoPedro">
-            <i class="fa fa-github-square fa-4x sr-icons"></i>
-          </a>
-          <p><a href="https://github.com/NetoPedro" class="text-blue">GitHub</a></p>
-        </div>
-      </div>
     </div>
-  </section>
 
   <!--  THIS IS THE FOOTER - displays a copyright notice and
         that Bootstrap powers this web page.
