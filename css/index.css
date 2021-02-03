@@ -10,6 +10,36 @@
     This file contains CSS classes / IDs used to override the Creative Bootstrap Theme
 */
 
+.activity-arrows .fas {
+    color: hsl(206, 0%, 50%);
+    transition: color 500ms;
+}
+
+.activity-arrows .fas:hover {
+    color: hsl(206, 66%, 55%);
+}
+
+.totop .fas {
+    color: #bbbbbb;
+    font-size: 1.6em;
+    opacity: 0;
+    transition: opacity 1s;
+    transition: color 500ms;
+}
+
+.research-arrows .fas:hover {
+    color: #ffffffff;
+}
+
+.research-arrows .fas + .fas {
+    margin-left: 30px;
+}
+
+
+.totop:hover .fas {
+    color: hsl(206, 66%, 55%);
+}
+
 .text-small {
   font-size: 100%;
 }
@@ -76,7 +106,7 @@
     font-size: 0.9em;
 }
 
-@media(max-width: 2500px) {
+@media(max-width: 1000px) {
     #contact .aep-small {
         display: block;
     }
