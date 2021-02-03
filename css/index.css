@@ -67,8 +67,7 @@
 }
 
 .contact-right {
-    width: calc(90% - 35px);
-    text-align: right;
+    width: 175px;
 }
 
 #contact span {
