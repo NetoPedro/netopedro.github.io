@@ -262,6 +262,7 @@
     background-color: #ffffff;
     transition: 500ms;
     color: #f05f40;
+    border-radius: 12px;
 }
 
 .publication-stats-circle:hover {
