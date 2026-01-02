@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro C. Neto | AI Scientist</title>
-    <meta name="description" content="Portfolio of Pedro C. Neto - Artificial Intelligence Scientist, Invited Assistant Professor, and Machine Learning Researcher.">
+    <meta name="description" content="Pedro C. Neto - AI Scientist & Researcher. Specializing in Medical AI, Computer Vision, and Biometrics.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -33,18 +33,16 @@
     </script>
 
     <style>
-        /* Custom Utilities */
         .glass-nav {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(0,0,0,0.05);
         }
         .dark .glass-nav {
-            background: rgba(15, 23, 42, 0.8);
+            background: rgba(15, 23, 42, 0.85);
             border-bottom: 1px solid rgba(255,255,255,0.05);
         }
         
-        /* Animation Classes */
         .fade-in-up {
             animation: fadeInUp 0.8s ease-out forwards;
             opacity: 0;
@@ -52,10 +50,7 @@
         }
         
         @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .delay-100 { animation-delay: 100ms; }
@@ -72,11 +67,11 @@
                     Pedro C. Neto
                 </a>
                 
-                <div class="hidden md:flex space-x-8 items-center">
+                <div class="hidden md:flex space-x-8 items-center font-medium text-sm">
                     <a href="#about" class="hover:text-primary transition-colors">About</a>
+                    <a href="#research" class="hover:text-primary transition-colors">Research</a>
+                    <a href="#media" class="hover:text-primary transition-colors">Media</a>
                     <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
-                    <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
-                    <a href="#publications" class="hover:text-primary transition-colors">Publications</a>
                     <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
                     
                     <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
@@ -93,37 +88,37 @@
             </div>
         </div>
         
-        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-dark border-t dark:border-slate-800 absolute w-full">
-            <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
-                <a href="#about" class="block py-2 hover:text-primary">About</a>
-                <a href="#experience" class="block py-2 hover:text-primary">Experience</a>
-                <a href="#projects" class="block py-2 hover:text-primary">Projects</a>
-                <a href="#publications" class="block py-2 hover:text-primary">Publications</a>
-                <a href="#contact" class="block py-2 hover:text-primary">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-dark border-t dark:border-slate-800 absolute w-full shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#about" class="block py-3 border-b border-slate-100 dark:border-slate-800 hover:text-primary">About</a>
+                <a href="#research" class="block py-3 border-b border-slate-100 dark:border-slate-800 hover:text-primary">Research</a>
+                <a href="#media" class="block py-3 border-b border-slate-100 dark:border-slate-800 hover:text-primary">Media</a>
+                <a href="#experience" class="block py-3 border-b border-slate-100 dark:border-slate-800 hover:text-primary">Experience</a>
+                <a href="#contact" class="block py-3 hover:text-primary">Contact</a>
             </div>
         </div>
     </nav>
 
-    <section id="about" class="pt-32 pb-20 px-4">
+    <section id="about" class="pt-32 pb-16 px-4">
         <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
             <div class="md:w-1/2 text-center md:text-left fade-in-up">
-                <div class="inline-block px-3 py-1 mb-4 text-sm font-semibold text-primary bg-blue-100 dark:bg-blue-900/30 rounded-full">
+                <div class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider uppercase text-primary bg-blue-100 dark:bg-blue-900/30 rounded-full">
                     Artificial Intelligence Scientist
                 </div>
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
                     Hi, I'm <br>
                     <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Pedro C. Neto</span>
                 </h1>
-                <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                    Artificial Intelligence Scientist at <strong>Unilabs</strong> and Invited Assistant Professor at <strong>FEUP</strong>. 
-                    Specializing in Machine Learning, Computer Vision, Biometrics, and Medical AI.
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
+                    AI Scientist at <strong>Unilabs</strong> and Invited Assistant Professor at <strong>FEUP</strong>. 
+                    Pushing the boundaries of Machine Learning in Healthcare, Computer Vision, and Biometrics.
                 </p>
                 
                 <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
                     <a href="#contact" class="px-6 py-3 bg-primary hover:bg-blue-700 text-white font-medium rounded-lg transition-colors shadow-lg shadow-blue-500/30">
-                        Contact Me
+                        Get in Touch
                     </a>
-                    <a href="https://scholar.google.com/citations?user=xR33Ko0AAAAJ" target="_blank" class="px-6 py-3 border border-slate-300 dark:border-slate-700 hover:border-primary hover:text-primary rounded-lg transition-colors">
+                    <a href="https://scholar.google.com/citations?user=xR33Ko0AAAAJ" target="_blank" class="px-6 py-3 border border-slate-300 dark:border-slate-700 hover:border-primary hover:text-primary rounded-lg transition-colors bg-white dark:bg-slate-800">
                         <i class="fas fa-graduation-cap mr-2"></i>Google Scholar
                     </a>
                 </div>
@@ -132,228 +127,225 @@
                     <a href="https://github.com/NetoPedro" target="_blank" class="hover:text-slate-900 dark:hover:text-white transition-colors"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/pedro-carneiro-neto/" target="_blank" class="hover:text-blue-600 transition-colors"><i class="fab fa-linkedin"></i></a>
                     <a href="https://www.researchgate.net/profile/Pedro-Neto-27" target="_blank" class="hover:text-emerald-500 transition-colors"><i class="fab fa-researchgate"></i></a>
-                    <a href="https://orcid.org/0000-0003-2177-5078" target="_blank" class="hover:text-green-600 transition-colors"><i class="fab fa-orcid"></i></a>
                 </div>
             </div>
             
             <div class="md:w-1/2 flex justify-center fade-in-up delay-200">
-                <div class="relative">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-30"></div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
                     <img src="https://github.com/NetoPedro.png" alt="Pedro C. Neto" class="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white dark:border-slate-800 shadow-2xl">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="py-20 bg-white dark:bg-slate-900/50">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center fade-in-up">Work Experience</h2>
-            
-            <div class="space-y-12">
-                <div class="relative pl-8 border-l-2 border-slate-200 dark:border-slate-700 fade-in-up delay-100">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-primary rounded-full border-4 border-white dark:border-slate-900"></div>
-                    <div class="mb-1 text-sm text-primary font-semibold">Aug 2024 - Present</div>
-                    <h3 class="text-xl font-bold">Artificial Intelligence Scientist</h3>
-                    <div class="text-slate-500 dark:text-slate-400 mb-2">Unilabs</div>
-                    <p class="text-slate-600 dark:text-slate-400">Developing cutting-edge AI solutions for healthcare and diagnostics.</p>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-slate-200 dark:border-slate-700 fade-in-up delay-100">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-secondary rounded-full border-4 border-white dark:border-slate-900"></div>
-                    <div class="mb-1 text-sm text-primary font-semibold">Sep 2022 - Present</div>
-                    <h3 class="text-xl font-bold">Invited Assistant Professor</h3>
-                    <div class="text-slate-500 dark:text-slate-400 mb-2">FEUP (Faculty of Engineering, University of Porto)</div>
-                    <p class="text-slate-600 dark:text-slate-400">Teaching Machine Learning and related subjects to engineering students.</p>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-slate-200 dark:border-slate-700 fade-in-up delay-100">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 dark:bg-slate-600 rounded-full border-4 border-white dark:border-slate-900"></div>
-                    <div class="mb-1 text-sm text-slate-500">Oct 2020 - July 2024</div>
-                    <h3 class="text-xl font-bold">Research Scientist</h3>
-                    <div class="text-slate-500 dark:text-slate-400">INESC TEC</div>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-slate-200 dark:border-slate-700 fade-in-up delay-100">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 dark:bg-slate-600 rounded-full border-4 border-white dark:border-slate-900"></div>
-                    <div class="mb-1 text-sm text-slate-500">2017 - 2020</div>
-                    <h3 class="text-xl font-bold">Previous Roles</h3>
-                    <div class="text-slate-500 dark:text-slate-400">Feedzai (Intern), Aalto University (Research Asst), Armis Group</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 px-4">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
-            <div class="fade-in-up">
-                <h2 class="text-3xl font-bold mb-8 flex items-center">
-                    <i class="fas fa-user-graduate text-primary mr-3"></i> Education
-                </h2>
-                <div class="space-y-6">
-                    <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
-                        <h3 class="font-bold text-lg">PhD in Artificial Intelligence</h3>
-                        <p class="text-primary">FEUP - University of Porto</p>
-                    </div>
-                    <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
-                        <h3 class="font-bold text-lg">MSc in Computer Science</h3>
-                        <p class="text-primary">Aalto University</p>
-                        <p class="text-sm text-slate-500 mt-2">Graduated with Honors</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fade-in-up delay-200">
-                <h2 class="text-3xl font-bold mb-8 flex items-center">
-                    <i class="fas fa-code text-secondary mr-3"></i> Skills
-                </h2>
-                <div class="flex flex-wrap gap-3">
-                    <span class="px-4 py-2 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 rounded-lg font-medium">Machine Learning</span>
-                    <span class="px-4 py-2 bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200 rounded-lg font-medium">Computer Vision</span>
-                    <span class="px-4 py-2 bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200 rounded-lg font-medium">Biometrics</span>
-                    <span class="px-4 py-2 bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 rounded-lg font-medium">Python</span>
-                    <span class="px-4 py-2 bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200 rounded-lg font-medium">C / C++</span>
-                    <span class="px-4 py-2 bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200 rounded-lg font-medium">Deep Learning</span>
-                    <span class="px-4 py-2 bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-200 rounded-lg font-medium">Computer-Aided Diagnosis</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-20 bg-slate-50 dark:bg-slate-900/50">
+    <section class="py-10 bg-white dark:bg-slate-800 border-y border-slate-100 dark:border-slate-700">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700 fade-in-up">
-                    <div class="h-2 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="font-bold text-xl group-hover:text-primary transition-colors">Face Recognition</h3>
-                            <i class="fas fa-id-badge text-slate-400"></i>
-                        </div>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Research and implementation of advanced deep learning models for facial recognition tasks.</p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">Python</span>
-                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">PyTorch</span>
-                        </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-slate-100 dark:divide-slate-700">
+                <div class="fade-in-up">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">615+</div>
+                    <div class="text-xs uppercase tracking-wide text-slate-500 mt-1 font-semibold">Citations</div>
+                </div>
+                <div class="fade-in-up delay-100">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">14</div>
+                    <div class="text-xs uppercase tracking-wide text-slate-500 mt-1 font-semibold">h-index</div>
+                </div>
+                <div class="fade-in-up delay-200">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">19</div>
+                    <div class="text-xs uppercase tracking-wide text-slate-500 mt-1 font-semibold">i10-index</div>
+                </div>
+                <div class="fade-in-up delay-300">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">25+</div>
+                    <div class="text-xs uppercase tracking-wide text-slate-500 mt-1 font-semibold">Publications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Selected Research</h2>
+                <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                    Exploring the intersection of deep learning and medical diagnostics to create interpretable, robust, and life-saving technologies.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+                <div class="p-8 bg-gradient-to-br from-blue-50 to-white dark:from-slate-800 dark:to-slate-900 rounded-2xl shadow-sm border border-blue-100 dark:border-slate-700 fade-in-up">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-full">MDPI Cancers</span>
+                        <span class="text-slate-400 text-sm font-mono">2022</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white hover:text-primary transition-colors">
+                        <a href="#">iMIL4PATH: A Semi-Supervised Interpretable Approach for Colorectal Whole-Slide Images</a>
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+                        A novel approach for analyzing colorectal cancer images using Multiple Instance Learning, providing both high accuracy and interpretability for pathologists.
+                    </p>
+                    <div class="flex items-center gap-4 text-sm font-semibold">
+                        <a href="#" class="text-primary hover:underline flex items-center gap-2"><i class="far fa-file-pdf"></i> Read Paper</a>
+                        <a href="#" class="text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 flex items-center gap-2"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
 
-                <div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700 fade-in-up delay-100">
-                    <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500"></div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="font-bold text-xl group-hover:text-primary transition-colors">Deep Street Segmentation</h3>
-                            <i class="fas fa-road text-slate-400"></i>
-                        </div>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Semantic segmentation for street scenes using deep neural networks.</p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">CV</span>
-                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">Segmentation</span>
-                        </div>
+                <div class="p-8 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 fade-in-up delay-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold rounded-full">IEEE WACV</span>
+                        <span class="text-slate-400 text-sm font-mono">2022</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">
+                        Myope Models - Are face presentation attack detection models short-sighted?
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                        Investigating the bias and limitations of current face anti-spoofing models, proposing robust training methodologies.
+                    </p>
+                    <div class="flex items-center gap-4 text-sm font-semibold">
+                        <a href="#" class="text-primary hover:underline flex items-center gap-2"><i class="far fa-file-pdf"></i> Read Paper</a>
                     </div>
                 </div>
+            </div>
 
-                <div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700 fade-in-up delay-200">
-                    <div class="h-2 bg-gradient-to-r from-green-500 to-teal-500"></div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="font-bold text-xl group-hover:text-primary transition-colors">Exercise Repetitions</h3>
-                            <i class="fas fa-dumbbell text-slate-400"></i>
-                        </div>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Extracting and counting exercise repetitions from video feeds using pose estimation.</p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">Video Analysis</span>
-                        </div>
+            <div class="space-y-4 max-w-4xl mx-auto">
+                <div class="flex gap-4 items-baseline p-4 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors fade-in-up delay-200">
+                    <span class="text-sm font-mono text-slate-400 w-12 flex-shrink-0">2021</span>
+                    <div>
+                        <h4 class="font-bold text-slate-900 dark:text-slate-200">FocusFace: Multi-task Contrastive Learning for Masked Face Recognition</h4>
+                        <p class="text-sm text-slate-500 mt-1">IEEE International Conference on Automatic Face and Gesture Recognition (FG)</p>
                     </div>
                 </div>
-
-                <div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700 fade-in-up">
-                    <div class="h-2 bg-gradient-to-r from-red-500 to-orange-500"></div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="font-bold text-xl group-hover:text-primary transition-colors">Adversarial Perturbations</h3>
-                            <i class="fas fa-shield-alt text-slate-400"></i>
-                        </div>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Implementation of Universal Adversarial Perturbations to test model robustness.</p>
-                    </div>
-                </div>
-
-                <div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700 fade-in-up delay-100">
-                    <div class="h-2 bg-gradient-to-r from-yellow-500 to-amber-500"></div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="font-bold text-xl group-hover:text-primary transition-colors">Pong from Pixels</h3>
-                            <i class="fas fa-gamepad text-slate-400"></i>
-                        </div>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Reinforcement Learning agent trained to play Pong using raw pixel inputs.</p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded">RL</span>
-                        </div>
+                <div class="flex gap-4 items-baseline p-4 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors fade-in-up delay-200">
+                    <span class="text-sm font-mono text-slate-400 w-12 flex-shrink-0">2021</span>
+                    <div>
+                        <h4 class="font-bold text-slate-900 dark:text-slate-200">My Eyes Are Up Here: Promoting Focus on Uncovered Regions in Masked Face Recognition</h4>
+                        <p class="text-sm text-slate-500 mt-1">IEEE BIOSIG</p>
                     </div>
                 </div>
             </div>
             
-            <div class="text-center mt-10">
-                <a href="https://github.com/NetoPedro" class="inline-flex items-center text-primary font-semibold hover:underline">
-                    View more on GitHub <i class="fas fa-arrow-right ml-2"></i>
+            <div class="text-center mt-12">
+                 <a href="https://scholar.google.com/citations?user=xR33Ko0AAAAJ" class="inline-flex items-center px-6 py-3 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    View Full Publication List on Google Scholar <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="publications" class="py-20 px-4">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">Selected Publications</h2>
+    <section id="media" class="py-20 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-3">
+                <i class="far fa-newspaper text-primary"></i> In The News
+            </h2>
             
-            <div class="space-y-6">
-                <div class="flex flex-col md:flex-row gap-4 p-6 rounded-lg hover:bg-white dark:hover:bg-slate-800 hover:shadow-md transition-all border border-transparent hover:border-slate-100 dark:hover:border-slate-700 fade-in-up">
-                    <div class="min-w-[60px] text-slate-400 font-mono text-sm">2022</div>
-                    <div>
-                        <h4 class="font-bold text-lg text-slate-900 dark:text-slate-100">iMIL4PATH: A Semi-Supervised Interpretable Approach for Colorectal Whole-Slide Images</h4>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mt-1">MDPI Cancers &bull; <i>Pedro C. Neto*, Sara P. Oliveira*, Diana Montezuma, et al.</i></p>
-                        <div class="mt-3 flex gap-4 text-sm">
-                            <a href="#" class="text-primary hover:underline"><i class="far fa-file-pdf mr-1"></i> Paper</a>
-                            <a href="#" class="text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"><i class="fas fa-code mr-1"></i> Code</a>
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="https://www.jn.pt/inovacao/artigo/investigadores-do-porto-criam-prototipo-que-usa-ia-no-diagnostico-de-cancro-colorretal/17807671" target="_blank" class="group block bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700 h-full flex flex-col">
+                    <div class="h-2 bg-red-600"></div> <div class="p-6 flex-1 flex flex-col">
+                        <div class="text-xs font-bold text-red-600 mb-2 uppercase tracking-wide">Jornal de Notícias</div>
+                        <h3 class="font-bold text-lg mb-3 group-hover:text-primary transition-colors">"Investigadores do Porto criam protótipo que usa IA no diagnóstico de cancro colorretal"</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mt-auto">Coverage of our AI prototype for colorectal cancer diagnosis.</p>
+                        <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 flex justify-between items-center text-xs text-slate-400">
+                            <span>2024</span>
+                            <span class="group-hover:translate-x-1 transition-transform"><i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                </div>
-
-                <div class="flex flex-col md:flex-row gap-4 p-6 rounded-lg hover:bg-white dark:hover:bg-slate-800 hover:shadow-md transition-all border border-transparent hover:border-slate-100 dark:hover:border-slate-700 fade-in-up delay-100">
-                    <div class="min-w-[60px] text-slate-400 font-mono text-sm">2022</div>
-                    <div>
-                        <h4 class="font-bold text-lg text-slate-900 dark:text-slate-100">Myope Models - Are face presentation attack detection models short-sighted?</h4>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mt-1">IEEE WACV &bull; <i>Pedro C. Neto, Ana F. Sequeira, Jaime S. Cardoso</i></p>
-                        <div class="mt-3 flex gap-4 text-sm">
-                            <a href="#" class="text-primary hover:underline"><i class="far fa-file-pdf mr-1"></i> Paper</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col md:flex-row gap-4 p-6 rounded-lg hover:bg-white dark:hover:bg-slate-800 hover:shadow-md transition-all border border-transparent hover:border-slate-100 dark:hover:border-slate-700 fade-in-up delay-100">
-                    <div class="min-w-[60px] text-slate-400 font-mono text-sm">2021</div>
-                    <div>
-                        <h4 class="font-bold text-lg text-slate-900 dark:text-slate-100">FocusFace: Multi-task Contrastive Learning for Masked Face Recognition</h4>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mt-1">IEEE FG &bull; <i>Pedro C. Neto, Fadi Boutros, et al.</i></p>
-                        <div class="mt-3 flex gap-4 text-sm">
-                            <a href="#" class="text-primary hover:underline"><i class="far fa-file-pdf mr-1"></i> Paper</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col md:flex-row gap-4 p-6 rounded-lg hover:bg-white dark:hover:bg-slate-800 hover:shadow-md transition-all border border-transparent hover:border-slate-100 dark:hover:border-slate-700 fade-in-up delay-100">
-                    <div class="min-w-[60px] text-slate-400 font-mono text-sm">2021</div>
-                    <div>
-                        <h4 class="font-bold text-lg text-slate-900 dark:text-slate-100">My Eyes Are Up Here: Promoting Focus on Uncovered Regions in Masked Face Recognition</h4>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mt-1">IEEE BIOSIG &bull; <i>Pedro C. Neto, et al.</i></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-8">
-                 <a href="https://scholar.google.com/citations?user=xR33Ko0AAAAJ" class="text-sm font-semibold text-slate-500 hover:text-primary transition-colors">
-                    View all 25+ publications on Google Scholar <i class="fas fa-external-link-alt ml-1"></i>
                 </a>
+
+                <a href="https://sicnoticias.pt/saude-e-bem-estar/2024-03-09-Criado-prototipo-que-usa-Inteligencia-Artificial-no-diagnostico-de-cancro-colorretal-8a9064f9" target="_blank" class="group block bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700 h-full flex flex-col">
+                    <div class="h-2 bg-indigo-600"></div> <div class="p-6 flex-1 flex flex-col">
+                        <div class="text-xs font-bold text-indigo-600 mb-2 uppercase tracking-wide">SIC Notícias</div>
+                        <h3 class="font-bold text-lg mb-3 group-hover:text-primary transition-colors">"Criado protótipo que usa Inteligência Artificial no diagnóstico de cancro colorretal"</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mt-auto">TV news report featuring our work on AI-assisted diagnostics.</p>
+                        <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 flex justify-between items-center text-xs text-slate-400">
+                            <span>2024</span>
+                            <span class="group-hover:translate-x-1 transition-transform"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://medicalxpress.com/news/2024-03-portuguese-prototype-ai-colorectal-diagnosis.html" target="_blank" class="group block bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-slate-100 dark:border-slate-700 h-full flex flex-col">
+                    <div class="h-2 bg-blue-500"></div> <div class="p-6 flex-1 flex flex-col">
+                        <div class="text-xs font-bold text-blue-500 mb-2 uppercase tracking-wide">Medical Xpress</div>
+                        <h3 class="font-bold text-lg mb-3 group-hover:text-primary transition-colors">"Portuguese prototype uses AI for colorectal cancer diagnosis"</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mt-auto">International coverage of our research breakthrough.</p>
+                        <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-700 flex justify-between items-center text-xs text-slate-400">
+                            <span>2024</span>
+                            <span class="group-hover:translate-x-1 transition-transform"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <i class="fas fa-pen-nib text-secondary"></i> Opinion Pieces
+            </h2>
+            
+            <a href="https://www.publico.pt/2025/09/15/p3/cronica/hype-relevancia-clinica-inteligencia-artificial-saude-2146522" target="_blank" class="block p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-primary dark:hover:border-primary transition-all shadow-sm hover:shadow-md group">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="bg-black text-white text-[10px] font-bold px-2 py-0.5 rounded">PÚBLICO</span>
+                            <span class="text-slate-500 text-xs">Sep 15, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold group-hover:text-primary transition-colors">Hype ou relevância clínica? A Inteligência Artificial na saúde</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mt-2 text-sm">
+                            An analysis of the current state of AI in healthcare, distinguishing between market hype and genuine clinical value.
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-700 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fas fa-external-link-alt"></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-bold mb-8">Work Experience</h2>
+                    <div class="space-y-8 border-l-2 border-slate-200 dark:border-slate-700 pl-8 ml-3">
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 w-5 h-5 bg-primary rounded-full border-4 border-white dark:border-slate-900"></span>
+                            <h3 class="font-bold text-lg">AI Scientist</h3>
+                            <p class="text-slate-500 text-sm mb-1">Unilabs &bull; 2024 - Present</p>
+                        </div>
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 w-5 h-5 bg-secondary rounded-full border-4 border-white dark:border-slate-900"></span>
+                            <h3 class="font-bold text-lg">Invited Assistant Professor</h3>
+                            <p class="text-slate-500 text-sm mb-1">FEUP &bull; 2022 - Present</p>
+                        </div>
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 w-5 h-5 bg-slate-300 dark:bg-slate-600 rounded-full border-4 border-white dark:border-slate-900"></span>
+                            <h3 class="font-bold text-lg">Research Scientist</h3>
+                            <p class="text-slate-500 text-sm mb-1">INESC TEC &bull; 2020 - 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold mb-8">Featured Projects</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white dark:bg-slate-800 p-5 rounded-lg border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <h4 class="font-bold text-primary">Colorectal Cancer Diagnosis AI</h4>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Deep learning prototype for analyzing colon biopsies.</p>
+                        </div>
+                        <div class="bg-white dark:bg-slate-800 p-5 rounded-lg border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <h4 class="font-bold text-primary">Masked Face Recognition</h4>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Contrastive learning approaches for biometrics during pandemics.</p>
+                        </div>
+                        <div class="bg-white dark:bg-slate-800 p-5 rounded-lg border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <h4 class="font-bold text-primary">Universal Adversarial Perturbations</h4>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Testing robustness of vision models against attacks.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -361,10 +353,6 @@
     <section id="contact" class="py-20 bg-slate-100 dark:bg-slate-900">
         <div class="max-w-3xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
-            <p class="text-slate-600 dark:text-slate-400 mb-10">
-                I'm always open to discussing new research collaborations, AI in healthcare, or student inquiries.
-            </p>
-            
             <div class="flex flex-col md:flex-row justify-center gap-6">
                 <a href="mailto:pedro.carneiro.neto.21@gmail.com" class="flex items-center justify-center gap-3 px-8 py-4 bg-white dark:bg-slate-800 rounded-lg shadow-sm hover:shadow-md transition-all text-slate-700 dark:text-slate-200">
                     <i class="fas fa-envelope text-primary"></i>
@@ -379,16 +367,14 @@
     </section>
 
     <footer class="py-8 bg-white dark:bg-dark border-t border-slate-100 dark:border-slate-800 text-center text-slate-500 text-sm">
-        <p>&copy; 2024 Pedro C. Neto. All rights reserved.</p>
-        <p class="mt-2">Powered by Tailwind CSS & Github Pages</p>
+        <p>&copy; 2026 Pedro C. Neto. All rights reserved.</p>
     </footer>
 
     <script>
-        // Dark Mode Toggle Logic
+        // Dark Mode
         const themeToggle = document.getElementById('theme-toggle');
         const html = document.documentElement;
 
-        // Check Local Storage or System Preference
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             html.classList.add('dark');
         } else {
@@ -397,14 +383,10 @@
 
         themeToggle.addEventListener('click', () => {
             html.classList.toggle('dark');
-            if (html.classList.contains('dark')) {
-                localStorage.theme = 'dark';
-            } else {
-                localStorage.theme = 'light';
-            }
+            localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
         });
 
-        // Mobile Menu Logic
+        // Mobile Menu
         const mobileBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -412,7 +394,6 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile menu on click
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
