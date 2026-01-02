@@ -152,6 +152,47 @@
     </script>
 
     <style>
+
+        .tech-section {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Light grey for contrast */
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tech-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-card i {
+    font-size: 2.5rem;
+    color: #004a99; /* Use your primary brand color */
+    margin-bottom: 15px;
+}
+
+.tech-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.tech-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
         /* Smooth Gradient Animation */
         .gradient-bg {
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -486,7 +527,33 @@
             </div>
         </div>
     </section>
-
+<section id="technologies" class="tech-section">
+    <div class="container">
+        <h2>Technologies & Expertise</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <i class="fas fa-brain"></i>
+                <h3>AI & Machine Learning</h3>
+                <p>PyTorch, Scikit-learn, Computer Vision, Deep Learning.</p>
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <p>Python, C++, SQL</p>
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-microscope"></i>
+                <h3>Research & Tools</h3>
+                <p>Git, Docker, LaTeX, Digital Pathology (WSI), Biometrics.</p>
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-hospital-user"></i>
+                <h3>Clinical AI</h3>
+                <p>Medical Imaging, Computer-aided Diagnosis, Explainable AI (XAI).</p>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="contact" class="py-20 bg-slate-100 dark:bg-slate-900">
         <div class="max-w-3xl mx-auto px-4 text-center">
