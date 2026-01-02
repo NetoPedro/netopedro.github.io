@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedro C. Neto – AI Scientist & Researcher</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ dark: false }" :class="{ 'dark': dark }" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-all">
+
+<!-- Header -->
+<header class="container mx-auto p-6 flex items-center justify-between">
+  <h1 class="text-3xl font-bold">Pedro C. Neto</h1>
+  <button @click="dark = !dark" class="px-3 py-1 border rounded">
+    Toggle 🌙/☀️
+  </button>
+</header>
+
+<!-- Hero -->
+<section class="container mx-auto text-center my-12">
+  <h2 class="text-4xl font-semibold">AI Scientist & Machine Learning Researcher</h2>
+  <p class="mt-2 text-lg">Deep Learning · Computer Vision · Biometrics · Interpretable AI</p>
+  <div class="mt-4 space-x-4">
+    <a href="#projects" class="btn">Projects</a>
+    <a href="#publications" class="btn">Publications</a>
+    <a href="mailto:pedro.neto@unilabs.com" class="btn">Contact</a>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="container mx-auto my-10">
+  <h3 class="text-2xl font-bold mb-4">Skills & Tools</h3>
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+    <div class="p-4 border rounded text-center">Python</div>
+    <div class="p-4 border rounded text-center">C / C++</div>
+    <div class="p-4 border rounded text-center">Machine Learning</div>
+    <div class="p-4 border rounded text-center">Deep Learning</div>
+    <div class="p-4 border rounded text-center">Computer Vision</div>
+    <div class="p-4 border rounded text-center">Git & GitHub</div>
+  </div>
+</section>
+
+<!-- Work -->
+<section id="work" class="container mx-auto my-10">
+  <h3 class="text-2xl font-bold mb-4">Work Experience</h3>
+  <div class="space-y-4">
+    <div class="border p-4 rounded">
+      <h4 class="text-xl font-semibold">AI Scientist — Unilabs</h4>
+      <p>Aug 2024 — Present</p>
+    </div>
+    <div class="border p-4 rounded">
+      <h4 class="text-xl font-semibold">Invited Assistant — FEUP</h4>
+      <p>Sep 2022 — Present</p>
+    </div>
+    <!-- Add more roles -->
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="container mx-auto my-10">
+  <h3 class="text-2xl font-bold mb-6">Projects</h3>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Example Card -->
+    <div class="border rounded shadow p-4">
+      <h4 class="text-xl font-semibold">Deep Learning Face Recognition</h4>
+      <p class="mt-2 text-sm">GitHub repo with training & eval code.</p>
+      <a href="https://github.com/NetoPedro/DeepLearning-Face-Recognition" target="_blank" class="text-blue-500 underline">View Project</a>
+    </div>
+    <!-- Repeat for each project -->
+  </div>
+</section>
+
+<!-- Publications -->
+<section id="publications" class="container mx-auto my-10">
+  <h3 class="text-2xl font-bold mb-4">Publications</h3>
+  <ul class="list-disc pl-5 space-y-2">
+    <li>
+      <strong>iMIL4PATH</strong> – MDPI Cancers 2022  
+      <a href="https://doi.org/... " class="text-blue-500 underline">Link</a>
+    </li>
+    <!-- Add other publications similarly -->
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer class="container mx-auto text-center py-6">
+  <p>© 2026 Pedro C. Neto · <a href="https://github.com/NetoPedro/netopedro.github.io" class="underline">Source Code</a></p>
+</footer>
+
+</body>
+</html>
