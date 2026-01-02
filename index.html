@@ -1,92 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pedro C. Neto – AI Scientist & Researcher</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro C. Neto | AI Scientist</title>
+    <meta name="description" content="Portfolio of Pedro C. Neto - Artificial Intelligence Scientist, Invited Assistant Professor, and Machine Learning Researcher.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2563eb', // Blue 600
+                        secondary: '#4f46e5', // Indigo 600
+                        dark: '#0f172a', // Slate 900
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .dark .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        /* Animation Classes */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
 </head>
-<body x-data="{ dark: false }" :class="{ 'dark': dark }" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-all">
+<body class="bg-slate-50 text-slate-800 dark:bg-dark dark:text-slate-200 transition-colors duration-300">
 
-<!-- Header -->
-<header class="container mx-auto p-6 flex items-center justify-between">
-  <h1 class="text-3xl font-bold">Pedro C. Neto</h1>
-  <button @click="dark = !dark" class="px-3 py-1 border rounded">
-    Toggle 🌙/☀️
-  </button>
-</header>
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+                    Pedro C. Neto
+                </a>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="hover:text-primary transition-colors">About</a>
+                    <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
+                    <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+                    <a href="#publications" class="hover:text-primary transition-colors">Publications</a>
+                    <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+                    
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+                        <i class="fas fa-moon dark:hidden text-slate-600"></i>
+                        <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+                    </button>
+                </div>
 
-<!-- Hero -->
-<section class="container mx-auto text-center my-12">
-  <h2 class="text-4xl font-semibold">AI Scientist & Machine Learning Researcher</h2>
-  <p class="mt-2 text-lg">Deep Learning · Computer Vision · Biometrics · Interpretable AI</p>
-  <div class="mt-4 space-x-4">
-    <a href="#projects" class="btn">Projects</a>
-    <a href="#publications" class="btn">Publications</a>
-    <a href="mailto:pedro.neto@unilabs.com" class="btn">Contact</a>
-  </div>
-</section>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-dark border-t dark:border-slate-800 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
+                <a href="#about" class="block py-2 hover:text-primary">About</a>
+                <a href="#experience" class="block py-2 hover:text-primary">Experience</a>
+                <a href="#projects" class="block py-2 hover:text-primary">Projects</a>
+                <a href="#publications" class="block py-2 hover:text-primary">Publications</a>
+                <a href="#contact" class="block py-2 hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- Skills -->
-<section class="container mx-auto my-10">
-  <h3 class="text-2xl font-bold mb-4">Skills & Tools</h3>
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-    <div class="p-4 border rounded text-center">Python</div>
-    <div class="p-4 border rounded text-center">C / C++</div>
-    <div class="p-4 border rounded text-center">Machine Learning</div>
-    <div class="p-4 border rounded text-center">Deep Learning</div>
-    <div class="p-4 border rounded text-center">Computer Vision</div>
-    <div class="p-4 border rounded text-center">Git & GitHub</div>
-  </div>
-</section>
+    <section id="about" class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left fade-in-up">
+                <div class="inline-block px-3 py-1 mb-4 text-sm font-semibold text-primary bg-blue-100 dark:bg-blue-900/30 rounded-full">
+                    Artificial Intelligence Scientist
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Hi, I'm <br>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Pedro C. Neto</span>
+                </h1>
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                    Artificial Intelligence Scientist at <strong>Unilabs</strong> and Invited Assistant Professor at <strong>FEUP</strong>. 
+                    Specializing in Machine Learning, Computer Vision, Biometrics, and Medical AI.
+                </p>
+                
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
+                    <a href="#contact" class="px-6 py-3 bg-primary hover:bg-blue-700 text-white font-medium rounded-lg transition-colors shadow-lg shadow-blue-500/30">
+                        Contact Me
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=xR33Ko0AAAAJ" target="_blank" class="px-6 py-3 border border-slate-300 dark:border-slate-700 hover:border-primary hover:text-primary rounded-lg transition-colors">
+                        <i class="fas fa-graduation-cap mr-2"></i>Google Scholar
+                    </a>
+                </div>
 
-<!-- Work -->
-<section id="work" class="container mx-auto my-10">
-  <h3 class="text-2xl font-bold mb-4">Work Experience</h3>
-  <div class="space-y-4">
-    <div class="border p-4 rounded">
-      <h4 class="text-xl font-semibold">AI Scientist — Unilabs</h4>
-      <p>Aug 2024 — Present</p>
-    </div>
-    <div class="border p-4 rounded">
-      <h4 class="text-xl font-semibold">Invited Assistant — FEUP</h4>
-      <p>Sep 2022 — Present</p>
-    </div>
-    <!-- Add more roles -->
-  </div>
-</section>
+                <div class="flex justify-center md:justify-start gap-6 text-2xl text-slate-400">
+                    <a href="https://github.com/NetoPedro" target="_blank" class="hover:text-slate-900 dark:hover:text-white transition-colors"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pedro-carneiro-neto/" target="_blank" class="hover:text-blue-600 transition-colors"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.researchgate.net/profile/Pedro-Neto-27" target="_blank" class="hover:text-emerald-500 transition-colors"><i class="fab fa-researchgate"></i></a>
+                    <a href="https://orcid.org/0000-0003-2177-5078" target="_blank" class="hover:text-green-600 transition-colors"><i class="fab fa-orcid"></i></a>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center fade-in-up delay-200">
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-30"></div>
+                    <img src="https://github.com/NetoPedro.png" alt="Pedro C. Neto" class="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white dark:border-slate-800 shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Projects -->
-<section id="projects" class="container mx-auto my-10">
-  <h3 class="text-2xl font-bold mb-6">Projects</h3>
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <!-- Example Card -->
-    <div class="border rounded shadow p-4">
-      <h4 class="text-xl font-semibold">Deep Learning Face Recognition</h4>
-      <p class="mt-2 text-sm">GitHub repo with training & eval code.</p>
-      <a href="https://github.com/NetoPedro/DeepLearning-Face-Recognition" target="_blank" class="text-blue-500 underline">View Project</a>
-    </div>
-    <!-- Repeat for each project -->
-  </div>
-</section>
-
-<!-- Publications -->
-<section id="publications" class="container mx-auto my-10">
-  <h3 class="text-2xl font-bold mb-4">Publications</h3>
-  <ul class="list-disc pl-5 space-y-2">
-    <li>
-      <strong>iMIL4PATH</strong> – MDPI Cancers 2022  
-      <a href="https://doi.org/... " class="text-blue-500 underline">Link</a>
-    </li>
-    <!-- Add other publications similarly -->
-  </ul>
-</section>
-
-<!-- Footer -->
-<footer class="container mx-auto text-center py-6">
-  <p>© 2026 Pedro C. Neto · <a href="https://github.com/NetoPedro/netopedro.github.io" class="underline">Source Code</a></p>
-</footer>
-
-</body>
-</html>
+    <section id="experience" class="py-20 bg-white dark:bg-slate-900/50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center fade-in-up">Work Experience</h2>
