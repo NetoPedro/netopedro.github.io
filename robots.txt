@@ -1,3 +1,4 @@
-# Allow all crawlers to access all content
 User-agent: *
 Allow: /
+
+Sitemap: https://netopedro.github.io/sitemap.xml
